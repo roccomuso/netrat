@@ -4,7 +4,8 @@
   "description": "Damn easy multiplatform Node.js RAT.",
   "main": "index.js",
   "scripts": {
-    "test": "standard"
+    "test": "standard",
+    "build": "pkg index.js --out-path build"
   },
   "repository": {
     "type": "git",
