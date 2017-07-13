@@ -30,6 +30,7 @@
     "standard": "^10.0.2"
   },
   "dependencies": {
+    "inquirer": "^3.2.0",
     "netcat": "^1.2.8",
     "shelljs": "^0.7.8"
   }
