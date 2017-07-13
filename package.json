@@ -1,0 +1,35 @@
+{
+  "name": "netrat",
+  "version": "1.0.0",
+  "description": "Damn easy multiplatform Node.js RAT.",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roccomuso/netrat.git"
+  },
+  "keywords": [
+    "rat",
+    "node",
+    "javascript",
+    "js",
+    "rat",
+    "backdoor"
+  ],
+  "author": "Rocco Musolino (roccomuso)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/roccomuso/netrat/issues"
+  },
+  "homepage": "https://github.com/roccomuso/netrat#readme",
+  "devDependencies": {
+    "pkg": "^4.1.1",
+    "standard": "^10.0.2"
+  },
+  "dependencies": {
+    "netcat": "^1.2.8",
+    "shelljs": "^0.7.8"
+  }
+}
