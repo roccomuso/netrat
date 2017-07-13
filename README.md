@@ -8,15 +8,20 @@
 
 > Damn easy multiplatform Node.js RAT.
 
+An easy tool to generate configurable backdoors that runs on Windows, Mac and Linux.
+
+**Work in progres...** *do not use it yet*.
+
 ## Install
-
-    $ npm install netrat
-
-## Build executables
 
     $ git clone https://github.com/roccomuso/netrat.git
     $ npm install
-    $ npm run build
+
+## Usage
+
+    $ npm start
+
+It will start the building procedure that lets you customize your backdoor.
 
 Under the hood we use [pkg](https://github.com/zeit/pkg) to build the executable.
 
@@ -47,10 +52,6 @@ Just notice that `setup.sh` doesn't contain any "execute on startup" logic yet.
 ### Windows
 
 Use 7-zip self-extracting and execution feature for compression.
-
-## Usage
-
-... **Work in progress**
 
 ## Core modules
 
