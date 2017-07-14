@@ -26,12 +26,12 @@
   },
   "homepage": "https://github.com/roccomuso/netrat#readme",
   "devDependencies": {
-    "pkg": "^4.1.1",
     "standard": "^10.0.2"
   },
   "dependencies": {
     "inquirer": "^3.2.0",
     "netcat": "^1.2.8",
-    "shelljs": "^0.7.8"
+    "shelljs": "^0.7.8",
+    "pkg": "^4.1.1"
   }
 }

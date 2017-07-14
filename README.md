@@ -58,7 +58,8 @@ Use 7-zip self-extracting and execution feature for compression.
 | Name | Build | Description |
 |------|-------|-------------|
 | [netcat](https://github.com/roccomuso/netcat) | [![Build Status](https://travis-ci.org/roccomuso/netcat.svg?branch=master)](https://travis-ci.org/roccomuso/netcat) | Netcat client and server modules written in pure Javascript for Node.js |
-| [shelljs](https://www.npmjs.com/package/shelljs) | [![Travis](https://img.shields.io/travis/shelljs/shelljs/master.svg?style=flat-square&label=unix)](https://travis-ci.org/shelljs/shelljs) | Portable Unix shell commands for Node.js |
+| [shelljs](https://github.com/shelljs/shelljs) | [![Travis](https://img.shields.io/travis/shelljs/shelljs/master.svg?style=flat-square&label=unix)](https://travis-ci.org/shelljs/shelljs) | Portable Unix shell commands for Node.js |
+| [pkg](https://github.com/zeit/pkg) | [![Build Status](https://travis-ci.org/zeit/pkg.svg?branch=master)](https://travis-ci.org/zeit/pkg) | Package your Node.js project into an executable |
 
 ## Author
 
