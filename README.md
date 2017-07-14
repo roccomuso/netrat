@@ -8,7 +8,7 @@
 
 > Damn easy multiplatform Node.js RAT.
 
-An easy tool to generate configurable backdoors that runs on Windows, Mac and Linux.
+An easy tool to generate configurable backdoors that runs on Windows, Mac and Linux. Shells are upgradable to **Meterpreter**!
 
 **Work in progres...** *do not use it yet*.
 
@@ -52,6 +52,10 @@ Just notice that `setup.sh` doesn't contain any "execute on startup" logic yet.
 ### Windows
 
 Use 7-zip self-extracting and execution feature for compression.
+
+## Cross-platform commands
+
+Commands starting with `shx` are backed with shelljs, providing an easy solution for simple Unix-like, cross-platform commands.
 
 ## Core modules
 
