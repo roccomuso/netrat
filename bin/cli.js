@@ -7,6 +7,6 @@ const builder = require('../lib/builder')
 
 inquirer.prompt(questions).then(function (answers) {
   debug('\nOutput receipt:')
-  debug(JSON.stringify(answers, null, '  '))
-  builder(answers)
+  debug(JSON.stringify(answers, null, 2))
+  builder(answers, process.cwd())
 })
