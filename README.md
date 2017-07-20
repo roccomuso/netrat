@@ -6,7 +6,7 @@
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 <span class="badge-patreon"><a href="https://patreon.com/roccomuso" title="Donate to this project using Patreon"><img src="https://img.shields.io/badge/patreon-donate-yellow.svg" alt="Patreon donate button" /></a></span>
 
-> Damn easy multiplatform Node.js RAT.
+> Damn easy multiplatform Node.js RAT generator
 
 An easy tool to generate configurable backdoors that runs on Windows, Mac and Linux. Shells are upgradable to **Meterpreter**!
 
