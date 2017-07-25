@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "standard",
+    "postinstall": "cd lib/seed/ && npm install",
     "build": "pkg index.js --out-path build"
   },
   "engines": {
@@ -36,9 +37,7 @@
     "inquirer": "^3.2.0",
     "lodash.findindex": "^4.6.0",
     "mustache": "^2.3.0",
-    "netcat": "^1.2.8",
     "pkg": "^4.1.1",
-    "semver": "^5.3.0",
-    "shelljs": "^0.7.8"
+    "semver": "^5.3.0"
   }
 }
