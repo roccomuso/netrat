@@ -2,7 +2,7 @@
   "name": "netrat",
   "version": "1.0.0",
   "description": "Damn easy multiplatform Node.js RAT generator",
-  "main": "index.js",
+  "main": "bin/cli.js",
   "scripts": {
     "test": "standard",
     "postinstall": "cd lib/seed/ && npm install",
