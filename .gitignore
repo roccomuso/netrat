@@ -37,6 +37,7 @@ node_modules/
 jspm_packages/
 tmp/
 lib/seed/node_modules/
+lib/seed/netrat-shell.js
 
 # Typescript v1 declaration files
 typings/
