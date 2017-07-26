@@ -36,6 +36,7 @@ build/Release
 node_modules/
 jspm_packages/
 tmp/
+lib/seed/node_modules/
 
 # Typescript v1 declaration files
 typings/
