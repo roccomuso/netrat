@@ -51,3 +51,7 @@ To enable debug, set the env var, `DEBUG=netrat`.
 ## Author
 
 Rocco Musolino ([@roccomuso](https://twitter.com/roccomuso))
+
+## License
+
+MIT
