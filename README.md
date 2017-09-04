@@ -10,16 +10,13 @@
 
 An easy tool to generate configurable backdoors that runs on Windows, Mac and Linux. Shells are upgradable to **Meterpreter**!
 
-**Work in progress...** *do not use it yet*.
-
 ## Install
 
-    $ git clone https://github.com/roccomuso/netrat.git
-    $ npm install
+    $ npm install -g netrat
 
 ## Usage
 
-    $ npm start
+    $ netrat
 
 It will start the building procedure that lets you customize your backdoor.
 
