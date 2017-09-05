@@ -44,6 +44,7 @@ To enable debug, set the env var, `DEBUG=netrat`.
 | [netcat](https://github.com/roccomuso/netcat) | [![Build Status](https://travis-ci.org/roccomuso/netcat.svg?branch=master)](https://travis-ci.org/roccomuso/netcat) | Netcat client and server modules written in pure Javascript for Node.js |
 | [cash](https://github.com/dthree/cash) | [![Build Status](https://travis-ci.org/dthree/cash.svg)](https://travis-ci.org/dthree/cash/) | Cross-platform Linux commands in ES6 |
 | [pkg](https://github.com/zeit/pkg) | [![Build Status](https://travis-ci.org/zeit/pkg.svg?branch=master)](https://travis-ci.org/zeit/pkg) | Package your Node.js project into an executable |
+| [upx](https://github.com/roccomuso/upx) | [![Build Status](https://travis-ci.org/roccomuso/upx.svg?branch=master)](https://travis-ci.org/roccomuso/upx) | The ultimate packer for executables |
 
 ## Author
 
