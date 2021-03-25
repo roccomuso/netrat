@@ -7,7 +7,7 @@
     "build": "pkg index.js --out-path build"
   },
   "engines": {
-    "node": ">=10.8.0"
+    "node": ">=8.0.0"
   },
   "repository": {
     "type": "git",
